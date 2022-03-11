@@ -751,6 +751,12 @@ html, body {
   scroll-behavior: smooth;
 }
 
+header{
+  position: sticky;
+  top: 0;
+  background-color:#17171F ;
+}
+
 .left-50 {
   left: 50%;
 }
