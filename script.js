@@ -3,9 +3,9 @@ function updateList() {
 		return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
 	});
 
-	document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
+	document.querySelectorAll(".text-selected-text").forEach(c => c.classList.remove("text-selected-text"));
 	
-	document.querySelectorAll(".nav-dot")[[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("selected-circle");
+	document.querySelectorAll(".nav-link")[[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("text-selected-text");
 }
 
 updateList();
