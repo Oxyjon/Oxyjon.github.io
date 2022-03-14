@@ -9,6 +9,7 @@ function updateList() {
 	document.querySelectorAll(".text-selected-text").forEach(c => c.classList.remove("text-selected-text"));
 	
 	document.querySelectorAll(".nav-link")[[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("text-selected-text");
+
 }
 
 updateList();
