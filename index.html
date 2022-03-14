@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="simple-lightbox.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body class="bg-body text-white font-poppins pb-12">
     <!-- Header -->
@@ -45,7 +46,7 @@
     <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
             <h2 id="about" class="secondary-title">About</h2>
-            <p class="section-paragraph">Some text goes here that I need to write about myself</p>
+            <p class="section-paragraph">Programming student</p>
 
         </section>
     </div>
@@ -56,7 +57,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
                 <!-- Card 1 -->
                 <div class="rounded-lg max-w-sm">
-                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover" src="img/FireSim.gif" alt=""/>
+                    <a href="images/FireSim.gif" data-lightbox="mygallery" data-title="Forest Fire Simulation">
+                      <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover"  src="images/FireSim.gif" alt=""/></a>
                   <div class="pt-3">
                     <h5 class="text-xl font-medium mb-2 font-bold">Forest Fire Simulation</h5>
                     <p class=" text-base mb-4">
@@ -68,7 +70,8 @@
                 </div>
                 <!-- Card 1 -->
                   <div class="rounded-lg max-w-sm">
-                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover" src="img/GameOfLife.gif" alt=""/>
+                    <a href="images/GameOfLife.gif" data-lightbox="mygallery" data-title="Conway's Game Of Life">
+                      <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover"  src="images/GameOfLife.gif" alt=""/></a>
                   <div class="pt-3">
                     <h5 class="text-xl font-medium mb-2 font-bold">Conway's Game of Life</h5>
                     <p class=" text-base mb-4">
@@ -80,7 +83,8 @@
                 </div>
                 <!-- Card Three -->
                 <div class="rounded-lg max-w-sm">
-                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover" src="img/Sort.gif" alt=""/>
+                  <a href="images/Sort.gif" data-lightbox="mygallery" data-title="Sort Visualiser">
+                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover"  src="images/Sort.gif" alt=""/></a>
                   <div class="pt-3">
                     <h5 class="text-xl font-medium mb-2 font-bold">Sort Visualiser</h5>
                     <p class=" text-base mb-4">
@@ -92,7 +96,8 @@
                 </div> 
                 <!-- Card Four -->
                 <div class="rounded-lg max-w-sm">
-                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover" src="img/Sort.gif" alt=""/>
+                  <a href="images/Sort.gif" data-lightbox="mygallery" data-title="Sort Visualiser">
+                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover"  src="images/Sort.gif" alt=""/></a>
                   <div class="pt-3">
                     <h5 class="text-xl font-medium mb-2 font-bold">Sort Visualiser</h5>
                     <p class=" text-base mb-4">
@@ -104,7 +109,8 @@
                 </div>
                 <!-- Card Five -->
                 <div class="rounded-lg max-w-sm">
-                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover" src="img/Sort.gif" alt=""/>
+                  <a href="images/Sort.gif" data-lightbox="mygallery" data-title="Sort Visualiser">
+                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover"  src="images/Sort.gif" alt=""/></a>>
                   <div class="pt-3">
                     <h5 class="text-xl font-medium mb-2 font-bold">Sort Visualiser</h5>
                     <p class=" text-base mb-4">
@@ -116,7 +122,8 @@
                 </div> 
                 <!-- Card Six -->
                 <div class="rounded-lg max-w-sm">
-                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover" src="img/Sort.gif" alt=""/>
+                  <a href="images/Sort.gif" data-lightbox="mygallery" data-title="Sort Visualiser">
+                    <img class="rounded w-full bg-nav h-36 lg:h-72 object-cover"  src="images/Sort.gif" alt=""/></a>
                   <div class="pt-3">
                     <h5 class="text-xl font-medium mb-2 font-bold">Sort Visualiser</h5>
                     <p class=" text-base mb-4">
