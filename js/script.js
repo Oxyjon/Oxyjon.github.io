@@ -1,3 +1,6 @@
+const btn = document.querySelector("button.mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
+
 function updateList() {
 	const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
 		return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
@@ -13,6 +16,6 @@ window.addEventListener('scroll', () => {
     updateList();
 })
 
-var gallery = $('.gallery a').simpleLightbox();
-
-gallery.next();
+btn.addEventListener("click", () => {
+	menu.classList.toggle("hidden");
+});
