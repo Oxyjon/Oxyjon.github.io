@@ -5,519 +5,1058 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>John Pelkman - Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>John Pelkman | Game Developer & Systems Programmer</title>
+  <meta content="Portfolio of John Pelkman, a Game Developer and Systems Programmer specializing in high-performance networking, UEFN / Unreal Engine, Unity, and multiplayer architecture." name="description">
+  <meta content="John Pelkman, Game Developer, Systems Programmer, Gameplay Programmer, UEFN, Unreal Engine, Unity, C++, C#, Networking, Sydney" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Template Main CSS File -->
+  <!-- Main Stylesheet -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header & Navigation ======= -->
   <header id="header">
-    <div class="container">
+    <div class="container nav-container">
 
-      <h1><a href="index.html">John Pelkman</a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
+      <!-- Brand / Logo -->
+      <a href="#hero" class="brand-logo" aria-label="John Pelkman Home">
+        <span class="brand-badge">JP</span>
+        <div class="brand-text">
+          John Pelkman
+          <span class="brand-sub">Game Developer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a class="nav-link active" href="#hero">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
 
-      <div class="social-links">
-        <a href="https://github.com/Oxyjon/" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/john-a-pelkman" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://oxyjon.itch.io/" class="linkedin"><i class="fa-brands fa-itch-io" style="color: #ffffff;"></i></a>
+          <!-- Mobile Social Links Inside Menu -->
+          <li class="mobile-menu-socials d-lg-none">
+            <a href="https://github.com/Oxyjon/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/john-a-pelkman" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://oxyjon.itch.io/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Itch.io Profile">
+              <i class="fa-brands fa-itch-io"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Socials / Contact CTA -->
+      <div class="nav-actions">
+        <a href="https://github.com/Oxyjon/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub Profile">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/john-a-pelkman" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://oxyjon.itch.io/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Itch.io Games" aria-label="Itch.io Profile">
+          <i class="fa-brands fa-itch-io"></i>
+        </a>
+        <a href="#contact" class="btn-outline-cyan ms-2 d-none d-sm-inline-flex">Get in Touch</a>
       </div>
+
+      <!-- Mobile Nav Toggle -->
+      <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation menu" aria-expanded="false"></button>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <main id="main">
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-glow-blob"></div>
+      <div class="hero-glow-blob-2"></div>
 
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-10 col-xl-9">
+
+            <!-- Availability Status Pill -->
+            <div class="mb-3">
+              <span class="status-pill">
+                <span class="status-dot"></span>
+                Available for Opportunities · Sydney, Australia
+              </span>
+            </div>
+
+            <p class="hero-greeting">&lt;Hello World /&gt; I'm</p>
+            <h1 class="hero-name">John Pelkman</h1>
+            
+            <p class="hero-title-tag">
+              Game Developer &amp; <span>Systems Programmer</span>
+            </p>
+
+            <p class="hero-bio">
+              Driven by creating robust, high-performance game systems and networked multiplayer experiences. 
+              Specializing in UEFN (Unreal Engine For Fortnite), Unreal Engine C++, and Unity architecture—bridging 
+              technical systems with intuitive gameplay across PC and console platforms.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#portfolio" class="btn-primary-glow">
+                Explore Projects <i class="bi bi-arrow-down-short fs-5"></i>
+              </a>
+              <a href="#experience" class="btn-secondary-glass">
+                <i class="bi bi-briefcase me-1"></i> View Experience
+              </a>
+              <a href="#contact" class="btn-outline-cyan">
+                <i class="bi bi-envelope me-1"></i> Contact Me
+              </a>
+            </div>
+
+            <!-- Fast Highlight Metrics -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <div class="stat-number">3<span>+</span></div>
+                <div class="stat-label">Commercial Studios</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10<span>+</span></div>
+                <div class="stat-label">Shipped Titles &amp; Tools</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">UEFN<span>/</span>UE5</div>
+                <div class="stat-label">Unreal Engine Focus</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">Console<span>&amp;</span>PC</div>
+                <div class="stat-label">Switch · Xbox · PC</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="row">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="section">
+      <div class="container">
 
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Programmer</h3>
-          <p>
-            I am a driven programmer who is always seeking new and exciting opportunities. My core focus is networking and system programming, where I excel in implementing robust, 
-            high-performance systems. Passionate about taking challenges head-on, I thrive in collaborative environments and am committed to staying at the forefront of technological advancements.
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">About Me</span>
+          <h2 class="section-heading">Architecting Robust Game Systems</h2>
+          <p class="section-subtitle">
+            A passion for systems programming, high-concurrency netcode, and solving complex gameplay engineering challenges.
           </p>
         </div>
-      </div>
 
-    </div><!-- End About Me -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-        <!-- https://icon-sets.iconify.design/fa6-brands/unity/ -->
-      <div class="row">
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><path fill="white" d="m243.583 91.603l80.112 46.781c2.88 1.642 2.985 6.199 0 7.841l-95.192 55.629a8.747 8.747 0 0 1-8.954 0l-95.192-55.629c-2.932-1.589-2.984-6.252 0-7.841l80.06-46.781V0L0 119.417v238.835l78.384-45.775v-93.563c-.052-3.338 3.823-5.722 6.703-3.921l95.192 55.629a9.092 9.092 0 0 1 4.503 7.842v111.205c.052 3.338-3.823 5.722-6.703 3.92l-80.112-46.781l-78.384 45.775L224 512l204.417-119.417l-78.384-45.775l-80.112 46.781c-2.828 1.749-6.807-.529-6.703-3.92V278.464c0-3.338 1.833-6.305 4.503-7.842l95.193-55.629c2.827-1.748 6.806.477 6.702 3.921v93.563L448 358.252V119.417L243.583 0v91.603Z"/></svg></i>
-            <h3>Unity</h3>
+        <div class="row g-4 mb-5">
+          <div class="col-lg-7">
+            <div class="about-card">
+              <h3 class="h4 text-white mb-3">Hi, I'm John Pelkman</h3>
+              <p class="about-intro-text">
+                I am a professional game programmer with commercial experience developing for both indie studios and high-scale live platforms like 
+                <strong>Unreal Engine For Fortnite (UEFN)</strong> and <strong>Unity</strong>.
+              </p>
+              <p class="text-secondary mb-4">
+                My primary expertise lies in networking, systems programming, and gameplay architecture. Whether it's building 100-player synchronized quest loops, 
+                implementing cross-session player persistence, optimizing frame rates for console certification, or writing in-engine telemetry tools, 
+                I thrive in turning ambitious creative visions into performant, scalable realities.
+              </p>
+              <div class="about-details-list">
+                <div class="about-detail-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <strong>Location</strong>
+                    <span>Sydney, NSW, Australia</span>
+                  </div>
+                </div>
+                <div class="about-detail-item">
+                  <i class="bi bi-cpu"></i>
+                  <div>
+                    <strong>Specialization</strong>
+                    <span>Systems &amp; Netcode</span>
+                  </div>
+                </div>
+                <div class="about-detail-item">
+                  <i class="bi bi-buildings"></i>
+                  <div>
+                    <strong>Current Role</strong>
+                    <span>Space Cadet Studio</span>
+                  </div>
+                </div>
+                <div class="about-detail-item">
+                  <i class="bi bi-controller"></i>
+                  <div>
+                    <strong>Platforms</strong>
+                    <span>PC, Xbox, UEFN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12m3.24 6.76A9.493 9.493 0 0 1 2.44 12c0-2.55.99-4.95 2.8-6.76A9.493 9.493 0 0 1 12 2.44c2.55 0 4.95.99 6.76 2.8a9.493 9.493 0 0 1 2.8 6.76c0 2.55-.99 4.95-2.8 6.76a9.493 9.493 0 0 1-6.76 2.8c-2.55 0-4.95-.99-6.76-2.8M6.35 9.5c-2.01 2.29-1.62 4.18-1.62 4.18s.55-1.3 1.88-2.68c.64-.63 1.11-.85 1.43-.85c.36 0 .53.26.53.5v4.64c0 .46-.3.56-.57.55a1.5 1.5 0 0 1-.45-.08C8.92 17.73 12.19 18 12.19 18l1.44-1.5h.04L15 17.63c2.39-1.42 3.55-4.05 3.55-4.05c-1.05 1.12-1.76 1.39-2.16 1.38c-.36 0-.51-.21-.51-.21c-.01-.1-.06-5.85.01-5.85c.42-.77 1.74-2.34 1.74-2.34c-2.47.49-3.82 2.1-3.82 2.1c-.4-.31-1.22-.26-1.22-.26c.38.21.76.81.76 1.32v4.93s-.85.73-1.47.73c-.38 0-.61-.21-.74-.38c-.09-.12-.14-.21-.14-.21v-6.1c-.07.06-.18.11-.29.11c-.14-.01-.28-.07-.37-.27c-.08-.15-.12-.38-.12-.7c0-1.13 1.28-1.87 1.28-1.87c-1.63.43-3.14 1.26-5.15 3.54"/></svg></i>
-            <h3>Unreal Engine</h3>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><img src="/assets/img/portfolio/raylib_logo.png" alt=""></i>
-            <h3>Raylib</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 455 512"><path fill="#3470d1" d="M435.28 113.284L247.19 4.692c-10.835-6.256-28.567-6.256-39.402 0L19.701 113.284C8.865 119.54 0 134.896 0 147.408v217.184c.843 14.572 8.286 26.64 19.7 34.124l188.09 108.591c10.834 6.257 28.566 6.257 39.401 0L435.28 398.716c12.248-8.146 19.22-20.408 19.701-34.124V147.408c-.44-13.165-8.323-26.443-19.7-34.124zM75.83 256.001c-.891-148.09 197.46-213.48 282.996-75.878l-65.634 37.98c-39.622-65.533-138.001-42.1-141.532 37.898c1.06 73.729 97.754 107.978 141.536 37.892l65.635 37.98c-75.383 130.862-279.2 83.78-283-75.872zm303.32 8.424h-16.852v16.852H345.45v-16.852h-16.852v-16.85h16.852v-16.85h16.85v16.85h16.851v16.85zm63.192 0H425.49v16.852h-16.85v-16.852h-16.85v-16.85h16.852v-16.85h16.849v16.85h16.852v16.85z"/></svg></i>
-            <h3>C++</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="#29cc61" d="M7 5.5a2.5 2.5 0 1 0 1.81 4.225a.75.75 0 0 1 1.086 1.035a4 4 0 1 1-.01-5.53a.75.75 0 0 1-1.082 1.04A2.49 2.49 0 0 0 7 5.5Z"/><path fill="#29cc61" d="M6.586.102a.75.75 0 0 1 .756 0l4.715 2.75a.75.75 0 0 1-.756 1.296l-4.337-2.53L1.5 4.806v6.388l5.464 3.188l4.337-2.53a.75.75 0 1 1 .755 1.296l-4.714 2.75a.75.75 0 0 1-.756 0L.372 12.273A.75.75 0 0 1 0 11.625v-7.25a.75.75 0 0 1 .372-.648L6.586.102Z"/><path fill="#29cc61" d="M12.18 5.25a.5.5 0 0 1 .5.5v4.5a.5.5 0 0 1-1 0v-4.5a.5.5 0 0 1 .5-.5Zm2.14 0a.5.5 0 0 1 .5.5v4.5a.5.5 0 0 1-1 0v-4.5a.5.5 0 0 1 .5-.5Z"/><path fill="#29cc61" d="M10.5 6.93a.5.5 0 0 1 .5-.5h4.5a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.5-.5Zm0 2.14a.5.5 0 0 1 .5-.5h4.5a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.5-.5Z"/></svg></i>
-            <h3>C#</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512"><path fill="#1b5dd0" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></i>
-            <h3>Python</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512"><path fill="#e8d44d" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg></i>
-            <h3>Javascript</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 512"><path fill="#21c033" d="M316.3 452c-2.1 0-4.2-.6-6.1-1.6L291 439c-2.9-1.6-1.5-2.2-.5-2.5 3.8-1.3 4.6-1.6 8.7-4 .4-.2 1-.1 1.4 .1l14.8 8.8c.5 .3 1.3 .3 1.8 0L375 408c.5-.3 .9-.9 .9-1.6v-66.7c0-.7-.3-1.3-.9-1.6l-57.8-33.3c-.5-.3-1.2-.3-1.8 0l-57.8 33.3c-.6 .3-.9 1-.9 1.6v66.7c0 .6 .4 1.2 .9 1.5l15.8 9.1c8.6 4.3 13.9-.8 13.9-5.8v-65.9c0-.9 .7-1.7 1.7-1.7h7.3c.9 0 1.7 .7 1.7 1.7v65.9c0 11.5-6.2 18-17.1 18-3.3 0-6 0-13.3-3.6l-15.2-8.7c-3.7-2.2-6.1-6.2-6.1-10.5v-66.7c0-4.3 2.3-8.4 6.1-10.5l57.8-33.4c3.7-2.1 8.5-2.1 12.1 0l57.8 33.4c3.7 2.2 6.1 6.2 6.1 10.5v66.7c0 4.3-2.3 8.4-6.1 10.5l-57.8 33.4c-1.7 1.1-3.8 1.7-6 1.7zm46.7-65.8c0-12.5-8.4-15.8-26.2-18.2-18-2.4-19.8-3.6-19.8-7.8 0-3.5 1.5-8.1 14.8-8.1 11.9 0 16.3 2.6 18.1 10.6 .2 .8 .8 1.3 1.6 1.3h7.5c.5 0 .9-.2 1.2-.5 .3-.4 .5-.8 .4-1.3-1.2-13.8-10.3-20.2-28.8-20.2-16.5 0-26.3 7-26.3 18.6 0 12.7 9.8 16.1 25.6 17.7 18.9 1.9 20.4 4.6 20.4 8.3 0 6.5-5.2 9.2-17.4 9.2-15.3 0-18.7-3.8-19.8-11.4-.1-.8-.8-1.4-1.7-1.4h-7.5c-.9 0-1.7 .7-1.7 1.7 0 9.7 5.3 21.3 30.6 21.3 18.5 0 29-7.2 29-19.8zm54.5-50.1c0 6.1-5 11.1-11.1 11.1s-11.1-5-11.1-11.1c0-6.3 5.2-11.1 11.1-11.1 6-.1 11.1 4.8 11.1 11.1zm-1.8 0c0-5.2-4.2-9.3-9.4-9.3-5.1 0-9.3 4.1-9.3 9.3 0 5.2 4.2 9.4 9.3 9.4 5.2-.1 9.4-4.3 9.4-9.4zm-4.5 6.2h-2.6c-.1-.6-.5-3.8-.5-3.9-.2-.7-.4-1.1-1.3-1.1h-2.2v5h-2.4v-12.5h4.3c1.5 0 4.4 0 4.4 3.3 0 2.3-1.5 2.8-2.4 3.1 1.7 .1 1.8 1.2 2.1 2.8 .1 1 .3 2.7 .6 3.3zm-2.8-8.8c0-1.7-1.2-1.7-1.8-1.7h-2v3.5h1.9c1.6 0 1.9-1.1 1.9-1.8zM137.3 191c0-2.7-1.4-5.1-3.7-6.4l-61.3-35.3c-1-.6-2.2-.9-3.4-1h-.6c-1.2 0-2.3 .4-3.4 1L3.7 184.6C1.4 185.9 0 188.4 0 191l.1 95c0 1.3 .7 2.5 1.8 3.2 1.1 .7 2.5 .7 3.7 0L42 268.3c2.3-1.4 3.7-3.8 3.7-6.4v-44.4c0-2.6 1.4-5.1 3.7-6.4l15.5-8.9c1.2-.7 2.4-1 3.7-1 1.3 0 2.6 .3 3.7 1l15.5 8.9c2.3 1.3 3.7 3.8 3.7 6.4v44.4c0 2.6 1.4 5.1 3.7 6.4l36.4 20.9c1.1 .7 2.6 .7 3.7 0 1.1-.6 1.8-1.9 1.8-3.2l.2-95zM472.5 87.3v176.4c0 2.6-1.4 5.1-3.7 6.4l-61.3 35.4c-2.3 1.3-5.1 1.3-7.4 0l-61.3-35.4c-2.3-1.3-3.7-3.8-3.7-6.4v-70.8c0-2.6 1.4-5.1 3.7-6.4l61.3-35.4c2.3-1.3 5.1-1.3 7.4 0l15.3 8.8c1.7 1 3.9-.3 3.9-2.2v-94c0-2.8 3-4.6 5.5-3.2l36.5 20.4c2.3 1.2 3.8 3.7 3.8 6.4zm-46 128.9c0-.7-.4-1.3-.9-1.6l-21-12.2c-.6-.3-1.3-.3-1.9 0l-21 12.2c-.6 .3-.9 .9-.9 1.6v24.3c0 .7 .4 1.3 .9 1.6l21 12.1c.6 .3 1.3 .3 1.8 0l21-12.1c.6-.3 .9-.9 .9-1.6v-24.3zm209.8-.7c2.3-1.3 3.7-3.8 3.7-6.4V192c0-2.6-1.4-5.1-3.7-6.4l-60.9-35.4c-2.3-1.3-5.1-1.3-7.4 0l-61.3 35.4c-2.3 1.3-3.7 3.8-3.7 6.4v70.8c0 2.7 1.4 5.1 3.7 6.4l60.9 34.7c2.2 1.3 5 1.3 7.3 0l36.8-20.5c2.5-1.4 2.5-5 0-6.4L550 241.6c-1.2-.7-1.9-1.9-1.9-3.2v-22.2c0-1.3 .7-2.5 1.9-3.2l19.2-11.1c1.1-.7 2.6-.7 3.7 0l19.2 11.1c1.1 .7 1.9 1.9 1.9 3.2v17.4c0 2.8 3.1 4.6 5.6 3.2l36.7-21.3zM559 219c-.4 .3-.7 .7-.7 1.2v13.6c0 .5 .3 1 .7 1.2l11.8 6.8c.4 .3 1 .3 1.4 0L584 235c.4-.3 .7-.7 .7-1.2v-13.6c0-.5-.3-1-.7-1.2l-11.8-6.8c-.4-.3-1-.3-1.4 0L559 219zm-254.2 43.5v-70.4c0-2.6-1.6-5.1-3.9-6.4l-61.1-35.2c-2.1-1.2-5-1.4-7.4 0l-61.1 35.2c-2.3 1.3-3.9 3.7-3.9 6.4v70.4c0 2.8 1.9 5.2 4 6.4l61.2 35.2c2.4 1.4 5.2 1.3 7.4 0l61-35.2c1.8-1 3.1-2.7 3.6-4.7 .1-.5 .2-1.1 .2-1.7zm-74.3-124.9l-.8 .5h1.1l-.3-.5zm76.2 130.2l-.4-.7v.9l.4-.2z"/></svg></i>
-            <h3>NodeJS</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512"><path fill="#ff9214" d="M439.6 236.1L244 40.5a28.9 28.9 0 0 0 -40.8 0l-40.7 40.6 51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.2 199v121.9c25.3 12.5 22.3 41.9 9.1 55a34.3 34.3 0 0 1 -48.6 0c-17.6-17.6-11.1-46.9 11.3-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1a28.9 28.9 0 0 0 0 40.8l195.6 195.6a28.9 28.9 0 0 0 40.8 0l194.7-194.7a28.9 28.9 0 0 0 0-40.8z"/></svg></i>
-            <h3>Git</h3>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-    <!-- End Skills -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-      <!-- <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-        <button type="button" class="resume-button btn btn-light">Download Resume</button>
-      </div> -->
-
-      <div class="row">
-        <div class="col-lg-6">
-          <!-- Education -->
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>10702NAT Advanced Diploma of Professional Game Development</h4>
-            <h5>2023</h5>
-            <p><em>Academy Of Interactive Entertainment, Sydney</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>ICT50220 Diploma of Information Technology</h4>
-            <h5>2022</h5>
-            <p><em>Academy Of Interactive Entertainment, Sydney</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>CUA51020 Diploma of Screen and Media</h4>
-            <h5>2022</h5>
-            <p><em>Academy Of Interactive Entertainment, Sydney</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Certificate III in Information Technology - Software Development</h4>
-            <h5>2016</h5>
-            <p><em>Academy Of Interactive Entertainment, Sydney</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Certificate III in Information Technology - Networking </h4>
-            <h5>2013</h5>
-            <p><em>TAFE NSW, Blacktown</em></p>
-           </div>
-
-
-
-        </div>
-        <div class="col-lg-6">
-          <!-- Experience -->
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Game Developer (Programming)</h4>
-            <h5>Nov 2024 - Present</h5>
-            <p><em>Space Cadet Studio, Sydney </em></p>
-            <p>
-            <ul>
-              <li>Led gameplay programming for UEFN (Unreal Engine For Fortnite) experiences, overseeing technical implementation across multiple Fortnite islands</li>
-              <li>Implemented core gameplay systems, mechanics, and progression features</li>
-              <li>Provided technical leadership, supporting and reviewing work from other developers and guiding implementation decisions</li>
-              <li>Optimised gameplay performance and stability within Fortnite platform constraints</li>
-              <li>Acted as a technical bridge between design and code, adapting gameplay systems to frequent scope changes and shifting production priorities</li>
-              <li>Implemented and maintained UI systems, including HUD elements, menus, and in-game feedback aligned with gameplay systems</li>
-              <li>Created and maintained technical documentation for gameplay systems, updating documentation as features were rescaled or redesigned during production</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Game programmer</h4>
-            <h5>Mar 2024 - Nov 2024</h5>
-            <p><em>Turtle Flip Studio, Sydney </em></p>
-            <p>
-            <ul>
-              <li>Developed multiple mini-games supporting local multiplayer and single-player campaign modes in Unity</li>
-              <li>Implemented gameplay systems handling interactions and game flow for shared-screen multiplayer</li>
-              <li>Optimised performance and responsiveness across a range of target hardware</li>
-              <li>Participated in multi-platform testing and validation for PC  and Xbox, identifying platform-specific issues and adjusting gameplay systems to meet console constraints.</li>
-              <li>Participated in testing and QA, reproducing bugs, fixing gameplay issues, and collaborating with designers to validate features</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Assistant Game Programming Trainer</h4>
-            <h5>Jun 2022 - Jun 2024</h5>
-            <p><em>Academy of Interactive Entertainment, Sydney </em></p>
-            <p>
-            <ul>
-              <li>Designed lesson plans</li>
-              <li>Created and Presented content for newcomers in Unreal Engine, C# and C++</li>
-              <li>Contributed to events such as Open Days and Career Expositions</li>
-              <li>Managed code repositories through source control</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Service Desk Officer</h4>
-            <h5>2019 - 2021</h5>
-            <p><em>Coleman Greig Lawyers, Sydney</em></p>
-            <p>
-            <ul>
-              <li>Provided level 1 & 2 on-site and remote support to all staff at multiple locations</li>
-              <li>Partnered with team members to create solutions for multiple projects spanning over 3 - 6 month periods</li>
-              <li>Strategically managed ticket queues, and resolving issues based on priority</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Senior Computer Technician</h4>
-            <h5>2014 - 2018</h5>
-            <p><em>JW Computers, Sydney</em></p>
-            <p>
-            <ul>
-              <li>Provided support to clients in person and over the phone</li>
-              <li>Building custom desktop solutions and configuring software</li>
-              <li>Trained and led new staff through several different roles</li>
-              <li>Maintain records and documentation, ensuring compliance and efficiency</li>
-              <li>Diagnosed and resolved hardware and software issues, minimizing downtime and maximizing productivity</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-  
-      <!-- Space Cadet Studios -->
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Space Cadet Studio</p>
-      </div>
-  
-      <div class="row portfolio-container">
-        <!-- Evo Worlds -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/Evo_W_0.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Evo Worlds</h4>
-              <p>Evo Worlds</p>
-              <div class="portfolio-links">
-                <a href="EvoWorlds.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
+          <div class="col-lg-5">
+            <div class="about-card d-flex flex-column justify-content-center">
+              <h4 class="text-white mb-3">Technical Leadership &amp; Delivery</h4>
+              <p class="text-secondary mb-4">
+                Beyond writing clean code, I act as a technical bridge between design and engineering—collaborating closely with game designers, 
+                reviewing code, authoring documentation, and adapting architecture to rapidly evolving production scopes.
+              </p>
+              <div class="p-3 rounded-3" style="background: rgba(0, 210, 255, 0.05); border: 1px solid rgba(0, 210, 255, 0.15);">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-mortarboard fs-2 text-info"></i>
+                  <div>
+                    <h5 class="text-white mb-1 fs-6">Educator &amp; Mentor Background</h5>
+                    <p class="text-secondary small mb-0">Former Assistant Game Programming Trainer at AIE Sydney, instructing newcomers in C++, C#, and Unreal Engine.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-  
-        <!-- Evo Rogue -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/EvoR_0.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Evo Rogue</h4>
-              <p>Evo Rogue</p>
-              <div class="portfolio-links">
-                <a href="EvoRogue.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
+
+        <!-- 4 Core Pillars Grid -->
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-globe2"></i>
               </div>
+              <h4 class="pillar-title">Network &amp; Multiplayer</h4>
+              <p class="pillar-desc">
+                Implementing synchronized networked physics, Photon netcode, player economy persistence, and low-latency client-server architecture.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <h4 class="pillar-title">Systems Architecture</h4>
+              <p class="pillar-desc">
+                Designing modular gameplay loops, state machines, inventory systems, powerup progression, and responsive HUD user interfaces.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h4 class="pillar-title">Performance &amp; Console</h4>
+              <p class="pillar-desc">
+                Profiling memory, frame pacing, and hardware constraints for PC, Xbox, and Nintendo Switch certification under tight resource limits.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h4 class="pillar-title">In-Engine Tooling</h4>
+              <p class="pillar-desc">
+                Developing custom editor extensions, telemetry heatmaps, and automated data pipelines that accelerate designer iteration.
+              </p>
             </div>
           </div>
         </div>
-  
-        <!-- Fishing Quest -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/FQLogo.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Fishing Quest</h4>
-              <p>Fishing Quest</p>
-              <div class="portfolio-links">
-                <a href="FishingQuest.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
+
+      </div>
+    </section>
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="section">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Technical Stack</span>
+          <h2 class="section-heading">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Core toolset and technologies utilized across commercial releases and developer tools.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Languages Card -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skills-category-card">
+              <div class="skills-category-header">
+                <div class="category-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h3 class="category-title">Languages</h3>
+              </div>
+              <div class="skills-badge-grid">
+                <div class="skill-chip featured">
+                  <i class="bi bi-filetype-raw text-info"></i> C++
+                </div>
+                <div class="skill-chip featured">
+                  <i class="bi bi-filetype-cs text-success"></i> C#
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-filetype-py text-warning"></i> Python
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-filetype-js text-warning"></i> JavaScript
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-terminal text-info"></i> Verse
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- Engines & Frameworks -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skills-category-card">
+              <div class="skills-category-header">
+                <div class="category-icon">
+                  <i class="bi bi-controller"></i>
+                </div>
+                <h3 class="category-title">Engines</h3>
+              </div>
+              <div class="skills-badge-grid">
+                <div class="skill-chip featured">
+                  <i class="bi bi-lightning-charge text-danger"></i> Unreal Engine
+                </div>
+                <div class="skill-chip featured">
+                  <i class="bi bi-fire text-warning"></i> UEFN
+                </div>
+                <div class="skill-chip featured">
+                  <i class="bi bi-unity text-white"></i> Unity 3D
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-box text-info"></i> Raylib
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Systems & Networking -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skills-category-card">
+              <div class="skills-category-header">
+                <div class="category-icon">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <h3 class="category-title">Netcode &amp; Systems</h3>
+              </div>
+              <div class="skills-badge-grid">
+                <div class="skill-chip featured">
+                  <i class="bi bi-broadcast text-info"></i> Networked Physics
+                </div>
+                <div class="skill-chip featured">
+                  <i class="bi bi-cloud-check text-success"></i> Photon PUN2
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-server text-white"></i> Client-Server
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-activity text-info"></i> Profiling
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-database text-warning"></i> Save Systems
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Production & Tools -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skills-category-card">
+              <div class="skills-category-header">
+                <div class="category-icon">
+                  <i class="bi bi-kanban"></i>
+                </div>
+                <h3 class="category-title">Workflow &amp; Tools</h3>
+              </div>
+              <div class="skills-badge-grid">
+                <div class="skill-chip featured">
+                  <i class="bi bi-git text-danger"></i> Git / GitHub
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-boxes text-info"></i> Perforce / SVN
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-window-desktop text-success"></i> Node.js
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-check2-square text-warning"></i> JIRA / Agile
+                </div>
+                <div class="skill-chip">
+                  <i class="bi bi-pc-display text-white"></i> PC &amp; Xbox QA
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="section">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Showcase</span>
+          <h2 class="section-heading">Featured Projects</h2>
+          <p class="section-subtitle">
+            Explore commercial studio releases, networked multiplayer games, and in-engine developer tools.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <ul class="portfolio-filters" role="tablist">
+          <li><button class="filter-btn active" data-filter="*">All Works (10)</button></li>
+          <li><button class="filter-btn" data-filter=".commercial">Commercial Studios (4)</button></li>
+          <li><button class="filter-btn" data-filter=".multiplayer">Multiplayer &amp; Netcode (5)</button></li>
+          <li><button class="filter-btn" data-filter=".tools">Tools &amp; Systems (2)</button></li>
+          <li><button class="filter-btn" data-filter=".indie">Indie &amp; Jams (4)</button></li>
+        </ul>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="row g-4 portfolio-grid">
+
+          <!-- 1. Evo Worlds -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item commercial multiplayer">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge highlight">Space Cadet Studio · UEFN</span>
+                <img src="assets/img/portfolio/Evo_W_0.png" alt="Evo Worlds preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Evo Worlds</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">UI Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                </div>
+                <p class="portfolio-desc">
+                  An online multiplayer sandbox built for player choice, exploration, and customisation. Implemented fully networked physics, player economy, and persistent worlds.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="evo-worlds">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://www.space-cadets.au/evo" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Space Cadets Studio">
+                    <i class="bi bi-box-arrow-up-right"></i> Studio
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Evo Rogue -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item commercial multiplayer">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge highlight">Space Cadet Studio · UEFN</span>
+                <img src="assets/img/portfolio/EvoR_0.png" alt="Evo Rogue preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Evo Rogue</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">UI Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                </div>
+                <p class="portfolio-desc">
+                  Thrilling 1-6 player roguelike with 25 rooms across 3 biomes. Battle overpowered abilities, poison &amp; lightning powerups, persistent upgrade saves, and boss combat.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="evo-rogue">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://www.fortnite.com/@spacecadets/4518-2577-7986?lang=en-US" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Play on Fortnite">
+                    <i class="bi bi-play-circle"></i> Play
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Fishing Quest -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item commercial multiplayer">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge highlight">Space Cadet Studio · UEFN</span>
+                <img src="assets/img/portfolio/FQLogo.png" alt="Fishing Quest preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Fishing Quest</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">UI Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                </div>
+                <p class="portfolio-desc">
+                  Massive 100-player cozy adventure across a sprawling archipelago. Engineered spot fishing mechanics, rare fish catch tables, 10+ island quests, and skill upgrades.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="fishing-quest">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://www.fortnite.com/@spacecadets/3325-2466-7020?lang=en-US" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Play on Fortnite">
+                    <i class="bi bi-play-circle"></i> Play
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Which Way Up: Galaxy Games -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item commercial multiplayer">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge">Turtle Flip Studio · Steam &amp; Switch</span>
+                <img src="assets/img/portfolio/WWU_KeyArt_Portrait.png" alt="Which Way Up preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Which Way Up: Galaxy Games</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">UI Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                </div>
+                <p class="portfolio-desc">
+                  Perform graceful gravity gymnastics and outrun black holes with friends. Implemented local shared-screen multiplayer, mini-games, and PC, Xbox &amp; Nintendo Switch console validation and adjustments.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="wwu">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <div class="d-flex align-items-center gap-1">
+                    <a href="https://store.steampowered.com/app/2318660/Which_Way_Up_Galaxy_Games/" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Steam Store">
+                      <i class="fa-brands fa-steam"></i> Steam
+                    </a>
+                    <a href="https://ec.nintendo.com/AU/en/titles/70010000069413" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Nintendo eShop">
+                      <i class="bi bi-controller"></i> Switch
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. T.I.M.E -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item multiplayer indie">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge">Steam Release · Arena 1v1</span>
+                <img src="assets/img/portfolio/TIME_Logo.png" alt="T.I.M.E preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">T.I.M.E</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">Network Programmer</span>
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                </div>
+                <p class="portfolio-desc">
+                  Fast-paced 1v1 arena shooter in a brutalist interior. Built custom netcode synchronization, dynamic pick-up spawners, jetpack movement, and an innovative Run-it-back round rewind system.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="time">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://store.steampowered.com/app/2632920/TIME/" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Steam Store">
+                    <i class="fa-brands fa-steam"></i> Steam
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Closed Captions -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item multiplayer indie">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge">Photon PUN2 Multiplayer</span>
+                <img src="assets/img/portfolio/CC_Logo.png" alt="Closed Captions preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Closed Captions</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">Lead Netcode</span>
+                  <span class="role-tag">Programmer</span>
+                </div>
+                <p class="portfolio-desc">
+                  Humorous 5-player party game where players submit and vote on real-time subtitles for classic films. Architected complete networking backend using Photon PUN2.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="closed-captions">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://tattooedmilk.itch.io/closed-captions" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Itch.io">
+                    <i class="fa-brands fa-itch-io"></i> Itch.io
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Heatmap Tool For Unity -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item tools">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge highlight">Engine Tool · Open Source</span>
+                <img src="assets/img/portfolio/Heatmap_4.png" alt="Heatmap Tool preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Heatmap Tool For Unity</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">Tools Developer</span>
+                  <span class="role-tag">Systems</span>
+                </div>
+                <p class="portfolio-desc">
+                  In-editor 2D telemetry tool developed over 6 weeks. Enables developers to record player coordinates into JSON format and render live traffic, cluster, and death density heatmaps.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="heatmap-tool">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://github.com/Oxyjon/2D-Heatmap-For-Unity" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="GitHub Repo">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Doon -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item indie">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge">Sci-Fi Survival Sim</span>
+                <img src="assets/img/portfolio/Doon_Logo.png" alt="Doon preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Doon</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                </div>
+                <p class="portfolio-desc">
+                  Desert planet scavenger survival game. Brave the shifting dunes, manage hydration and oxygen supplies, and evade aggressive indigenous sand predators.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="doon">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://matthewcarver.itch.io/doon-underground-2" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Itch.io">
+                    <i class="fa-brands fa-itch-io"></i> Itch.io
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Loderr's Lava Plugging (VR) -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item tools indie">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge">VR Interaction · Unity XR</span>
+                <img src="assets/img/portfolio/VR_Logo.png" alt="VR Lava Plugging preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Loderr's Lava Plugging</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">VR Systems</span>
+                  <span class="role-tag">Gameplay</span>
+                  <span class="role-tag">UI</span>
+                </div>
+                <p class="portfolio-desc">
+                  Scramble as a frantic dwarf plugging holes on a floating lava minigolf course with a warhammer. Built physics-driven VR interactions, 3D trajectory calculation, and spatial UI.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="vr-lava">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://amaynard.itch.io/loderrslavaplugging" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Itch.io">
+                    <i class="fa-brands fa-itch-io"></i> Itch.io
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Breaking Green -->
+          <div class="col-lg-4 col-md-6 portfolio-grid-item indie">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb-wrap">
+                <span class="portfolio-studio-badge">Permaculture Sim · Indie</span>
+                <img src="assets/img/portfolio/BGreen_Logo.png" alt="Breaking Green preview" class="portfolio-thumb" loading="lazy">
+              </div>
+              <div class="portfolio-body">
+                <h3 class="portfolio-title">Breaking Green</h3>
+                <div class="portfolio-roles-tags">
+                  <span class="role-tag">System Programmer</span>
+                  <span class="role-tag">Gameplay</span>
+                  <span class="role-tag">UI</span>
+                </div>
+                <p class="portfolio-desc">
+                  Overcome financial debt by building a self-sustaining permaculture ecosystem inside an apartment. Engineered growth tick systems, ecological balance algorithms, and custom HUD.
+                </p>
+                <div class="portfolio-footer">
+                  <button class="btn-card-details" data-project-trigger="breaking-green">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <a href="https://its-just-nick.itch.io/breaking-green-e-core" target="_blank" rel="noopener noreferrer" class="btn-card-ext" title="Itch.io">
+                    <i class="fa-brands fa-itch-io"></i> Itch.io
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= In-Page Project Details Modal ======= -->
+    <div id="projectModal" class="project-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+      <div class="project-modal-dialog">
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">
+          <i class="bi bi-x"></i>
+        </button>
+
+        <div class="modal-content-wrap">
+          <!-- Gallery -->
+          <div class="modal-gallery">
+            <div class="modal-main-img-wrap">
+              <img id="modalMainImg" src="" alt="Project detail image" class="modal-main-img">
+            </div>
+            <div id="modalThumbsRow" class="modal-thumbs-row">
+              <!-- Dynamically populated thumbnail buttons -->
+            </div>
+          </div>
+
+          <!-- Info Header -->
+          <div class="modal-header-info">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+              <span id="modalProjectStudio" class="badge bg-primary text-white">Studio</span>
+              <span id="modalProjectBadge" class="badge bg-dark border border-secondary text-info">Badge</span>
+            </div>
+            <h2 id="modalProjectTitle" class="modal-project-title">Project Title</h2>
+          </div>
+
+          <!-- Metadata Grid -->
+          <div class="modal-meta-grid">
+            <div class="meta-block">
+              <strong>Key Contributions</strong>
+              <ul id="modalProjectRoles">
+                <!-- Roles list -->
+              </ul>
+            </div>
+            <div class="meta-block">
+              <strong>Tech Stack</strong>
+              <p id="modalProjectTech">Tech info</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <h3 class="modal-desc-heading">Overview &amp; Architecture</h3>
+          <p id="modalProjectDesc" class="modal-desc-text"></p>
+
+          <!-- Actions -->
+          <div class="modal-actions-row">
+            <a id="modalProjectUrl" href="#" class="btn-primary-glow" target="_blank" rel="noopener noreferrer">
+              View Live Project <i class="bi bi-box-arrow-up-right ms-1"></i>
+            </a>
+          </div>
+
         </div>
       </div>
-
-      <!-- Turtle Flip Studio -->
-    <div class="section-title">
-      <p>Turtle Flip Studio</p>
     </div>
 
-    <div class="row portfolio-container">
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="assets/img/portfolio/WWU_KeyArt_Portrait.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Which Way Up: Galaxy Games</h4>
-            <p>Which Way Up: Galaxy Games</p>
-            <div class="portfolio-links">
-              <a href="WWU.html" data-gallery="portfolioDetailsGallery"
-                data-glightbox="type: external"
-                class="portfolio-details-lightbox">
-                <i class="bx bx-plus"></i>
+    <!-- ======= Experience & Education Section ======= -->
+    <section id="experience" class="section">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Career Path</span>
+          <h2 class="section-heading">Experience &amp; Education</h2>
+          <p class="section-subtitle">
+            A proven trajectory across commercial game studios, technical training, and systems engineering.
+          </p>
+        </div>
+
+        <div class="row g-5">
+
+          <!-- Professional Experience Column -->
+          <div class="col-lg-7">
+            <h3 class="h4 text-white mb-4 d-flex align-items-center gap-2">
+              <i class="bi bi-briefcase text-info"></i> Professional Experience
+            </h3>
+
+            <!-- 1. Space Cadet Studio -->
+            <div class="timeline-block">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Game Developer (Programming)</h4>
+                  <span class="timeline-period">Nov 2024 - Present</span>
+                </div>
+                <div class="timeline-company">Space Cadet Studio · Sydney, Australia</div>
+                <ul class="timeline-bullets">
+                  <li>Led gameplay programming for UEFN (Unreal Engine For Fortnite) experiences, overseeing technical architecture across multiple commercial Fortnite islands.</li>
+                  <li>Implemented core gameplay systems, player progression, dynamic inventory, and networked mechanics.</li>
+                  <li>Provided technical leadership, supporting and reviewing code from team developers and steering implementation strategies.</li>
+                  <li>Optimized gameplay performance, memory footprints, and frame pacing within stringent Fortnite platform constraints.</li>
+                  <li>Acted as a technical bridge between design and code, adapting gameplay systems to rapid scope iterations.</li>
+                  <li>Engineered UI systems including custom HUD elements, dynamic menus, and real-time player feedback loops.</li>
+                  <li>Authored and maintained comprehensive technical documentation for gameplay systems throughout production.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 2. Turtle Flip Studio -->
+            <div class="timeline-block">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Game Programmer</h4>
+                  <span class="timeline-period">Mar 2024 - Nov 2024</span>
+                </div>
+                <div class="timeline-company">Turtle Flip Studio · Sydney, Australia</div>
+                <ul class="timeline-bullets">
+                  <li>Developed multiple mini-games supporting local shared-screen multiplayer and single-player campaign modes in Unity (C#).</li>
+                  <li>Implemented complex physics interactions, party mini-game flow, and controller assignment systems.</li>
+                  <li>Conducted multi-platform validation for PC, Xbox, and Nintendo Switch, resolving platform-specific compliance issues and console hardware constraints.</li>
+                  <li>Collaborated closely with designers on QA playtests, diagnosing edge-case bugs and validating game mechanics.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3. AIE Trainer -->
+            <div class="timeline-block">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Assistant Game Programming Trainer</h4>
+                  <span class="timeline-period">Jun 2022 - Jun 2024</span>
+                </div>
+                <div class="timeline-company">Academy of Interactive Entertainment · Sydney, Australia</div>
+                <ul class="timeline-bullets">
+                  <li>Designed lesson plans and taught newcomers foundational game development principles in Unreal Engine, C#, and C++.</li>
+                  <li>Guided students through source control (Git/SVN), debugging workflows, and object-oriented architecture.</li>
+                  <li>Represented the academy at industry career expositions and open days.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 4. Coleman Greig Lawyers -->
+            <div class="timeline-block">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Service Desk Officer</h4>
+                  <span class="timeline-period">2019 - 2021</span>
+                </div>
+                <div class="timeline-company">Coleman Greig Lawyers · Sydney, Australia</div>
+                <ul class="timeline-bullets">
+                  <li>Delivered Tier 1 &amp; 2 on-site and remote infrastructure support to corporate staff across multiple office locations.</li>
+                  <li>Collaborated on IT rollout projects spanning 3 to 6 month phases while maintaining rigorous ticket queue SLAs.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 5. JW Computers -->
+            <div class="timeline-block">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Senior Computer Technician</h4>
+                  <span class="timeline-period">2014 - 2018</span>
+                </div>
+                <div class="timeline-company">JW Computers · Sydney, Australia</div>
+                <ul class="timeline-bullets">
+                  <li>Assembled custom high-performance workstations and gaming rigs, diagnosing complex hardware/firmware issues.</li>
+                  <li>Trained and mentored new technical staff across diagnostic and assembly procedures.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Education & Credentials Column -->
+          <div class="col-lg-5">
+            <h3 class="h4 text-white mb-4 d-flex align-items-center gap-2">
+              <i class="bi bi-mortarboard text-info"></i> Education &amp; Credentials
+            </h3>
+
+            <!-- Degree 1 -->
+            <div class="edu-card">
+              <span class="edu-year">GRADUATED 2023</span>
+              <h4 class="edu-title">10702NAT Advanced Diploma of Professional Game Development</h4>
+              <p class="edu-school">Academy Of Interactive Entertainment, Sydney</p>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="edu-card">
+              <span class="edu-year">GRADUATED 2022</span>
+              <h4 class="edu-title">ICT50220 Diploma of Information Technology</h4>
+              <p class="edu-school">Academy Of Interactive Entertainment, Sydney</p>
+            </div>
+
+            <!-- Degree 3 -->
+            <div class="edu-card">
+              <span class="edu-year">GRADUATED 2022</span>
+              <h4 class="edu-title">CUA51020 Diploma of Screen and Media</h4>
+              <p class="edu-school">Academy Of Interactive Entertainment, Sydney</p>
+            </div>
+
+            <!-- Degree 4 -->
+            <div class="edu-card">
+              <span class="edu-year">GRADUATED 2016</span>
+              <h4 class="edu-title">Certificate III in Information Technology - Software Development</h4>
+              <p class="edu-school">Academy Of Interactive Entertainment, Sydney</p>
+            </div>
+
+            <!-- Degree 5 -->
+            <div class="edu-card">
+              <span class="edu-year">GRADUATED 2013</span>
+              <h4 class="edu-title">Certificate III in Information Technology - Networking</h4>
+              <p class="edu-school">TAFE NSW, Blacktown</p>
+            </div>
+
+            <!-- Quick Summary Card -->
+            <div class="p-4 rounded-4 mt-4" style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.25);">
+              <h5 class="text-white mb-2 fs-6"><i class="bi bi-check-circle-fill text-info me-2"></i>Continuous Learning</h5>
+              <p class="text-secondary small mb-0">
+                Regularly engaging in game jams, researching new engine capabilities (Unreal Engine 5.5, UEFN Scene Graph, Verse concurrency), and developing open-source telemetry tools.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-heading">Connect With Me</h2>
+          <p class="section-subtitle">
+            Interested in collaborating, hiring for game programming or systems roles, or talking game tech? Reach out!
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- LinkedIn Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <h3 class="contact-title">LinkedIn</h3>
+              <p class="contact-desc">Connect with me on LinkedIn for professional opportunities &amp; network updates.</p>
+              <a href="https://www.linkedin.com/in/john-a-pelkman" target="_blank" rel="noopener noreferrer" class="btn-primary-glow w-100">
+                Connect on LinkedIn <i class="bi bi-box-arrow-up-right ms-1"></i>
               </a>
             </div>
           </div>
+
+          <!-- GitHub Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <i class="bi bi-github"></i>
+              </div>
+              <h3 class="contact-title">GitHub</h3>
+              <p class="contact-desc">Inspect code repositories, tools, game prototypes, and open-source projects.</p>
+              <a href="https://github.com/Oxyjon/" target="_blank" rel="noopener noreferrer" class="btn-secondary-glass w-100">
+                Explore GitHub Repos <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Itch.io Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <i class="fa-brands fa-itch-io"></i>
+              </div>
+              <h3 class="contact-title">Itch.io</h3>
+              <p class="contact-desc">Play game jam entries, experimental prototypes, and indie community titles.</p>
+              <a href="https://oxyjon.itch.io/" target="_blank" rel="noopener noreferrer" class="btn-secondary-glass w-100">
+                Play on Itch.io <i class="bi bi-controller ms-1"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-brand">John <span>Pelkman</span></div>
+        <p class="footer-copy">&copy; 2026 John Pelkman. All rights reserved. Designed for performance &amp; accessibility.</p>
+      </div>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://github.com/Oxyjon/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/john-a-pelkman" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://oxyjon.itch.io/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Itch.io">
+          <i class="fa-brands fa-itch-io"></i>
+        </a>
       </div>
     </div>
-  
-      <!-- My Works -->
-      <div class="section-title">
-        <p>My Works</p>
-      </div>
-  
-      <div class="row portfolio-container">
-        <!-- Closed Captions -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/CC_Logo.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Closed Captions</h4>
-              <p>Closed Captions</p>
-              <div class="portfolio-links">
-                <a href="CC.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- TIME -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/TIME_Logo.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>T.I.M.E</h4>
-              <p>T.I.M.E</p>
-              <div class="portfolio-links">
-                <a href="TIME.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Heatmap -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/Heatmap_4.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Heatmap</h4>
-              <p>Heatmap</p>
-              <div class="portfolio-links">
-                <a href="Hydra.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Doon -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/Doon_Logo.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Doon</h4>
-              <p>Doon</p>
-              <div class="portfolio-links">
-                <a href="Doon.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- VR -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/VR_Logo.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Loderr's Lava Plugging (VR)</h4>
-              <p>Loderr's Lava Plugging (VR)</p>
-              <div class="portfolio-links">
-                <a href="VR.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Breaking Green -->
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/BGreen_Logo.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Breaking Green</h4>
-              <p>Breaking Green</p>
-              <div class="portfolio-links">
-                <a href="BGreen.html" data-gallery="portfolioDetailsGallery"
-                   data-glightbox="type: external"
-                   class="portfolio-details-lightbox">
-                  <i class="bx bx-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-  
-    </div>
-  </section><!-- End Portfolio Section -->
+  </footer>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/john-a-pelkman" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-    </div>
-  </section><!-- End Contact Section -->
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- Vendor Scripts -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/iconify/iconify.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JavaScript File -->
   <script src="assets/js/main.js"></script>
 
 </body>

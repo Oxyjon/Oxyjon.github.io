@@ -5,123 +5,154 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>John Pelkman - T.I.M.E</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>T.I.M.E | John Pelkman</title>
+  <meta content="T.I.M.E - 1v1 Arena Shooter on Steam. Network, systems, and gameplay programming by John Pelkman." name="description">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <main id="main">
+  <header id="header" class="scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Return to John Pelkman Home">
+        <span class="brand-badge">JP</span>
+        <div class="brand-text">
+          John Pelkman
+          <span class="brand-sub">Game Developer</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html#portfolio" class="btn-outline-cyan">
+          <i class="bi bi-arrow-left me-1"></i> Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
-      <div class="container">
+  <main id="main" class="subpage-header">
+    <div class="container">
 
-        <div class="row">
+      <a href="index.html#portfolio" class="back-link-bar">
+        <i class="bi bi-arrow-left"></i> Back to All Projects
+      </a>
 
-          <div class="col-lg-8">
-            <h2 class="portfolio-title">T.I.M.E</h2>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="subpage-gallery-card">
+            <h1 class="h2 text-white mb-3">T.I.M.E</h1>
 
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+            <div class="modal-main-img-wrap mb-3">
+              <img id="detailMainImg" src="assets/img/portfolio/Time_8.jpg" alt="T.I.M.E screenshot" class="modal-main-img">
+            </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_8.jpg" alt="">
-                </div>
+            <div class="modal-thumbs-row">
+              <button type="button" class="modal-thumb-btn active" onclick="switchImg('assets/img/portfolio/Time_8.jpg', this)">
+                <img src="assets/img/portfolio/Time_8.jpg" alt="TIME 8">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_7.jpg', this)">
+                <img src="assets/img/portfolio/Time_7.jpg" alt="TIME 7">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_6.jpg', this)">
+                <img src="assets/img/portfolio/Time_6.jpg" alt="TIME 6">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_5.jpg', this)">
+                <img src="assets/img/portfolio/Time_5.jpg" alt="TIME 5">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_4.jpg', this)">
+                <img src="assets/img/portfolio/Time_4.jpg" alt="TIME 4">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_3.jpg', this)">
+                <img src="assets/img/portfolio/Time_3.jpg" alt="TIME 3">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_2.jpg', this)">
+                <img src="assets/img/portfolio/Time_2.jpg" alt="TIME 2">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/Time_1.jpg', this)">
+                <img src="assets/img/portfolio/Time_1.jpg" alt="TIME 1">
+              </button>
+              <button type="button" class="modal-thumb-btn" onclick="switchImg('assets/img/portfolio/TIME_Logo.png', this)">
+                <img src="assets/img/portfolio/TIME_Logo.png" alt="TIME Logo">
+              </button>
+            </div>
+          </div>
+        </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_7.jpg" alt="">
-                </div>
+        <div class="col-lg-4">
+          <div class="subpage-sidebar-card">
+            <span class="badge bg-primary text-white mb-2">Steam Release</span>
+            <span class="badge bg-dark border border-secondary text-info mb-3">1v1 Arena Shooter</span>
+            <h2 class="h4 text-white mb-3">Project Specifications</h2>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_6.jpg" alt="">
-                </div>
+            <div class="mb-4">
+              <strong class="d-block text-uppercase text-info small mb-2">Key Contributions</strong>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><i class="bi bi-check2-circle text-info me-2"></i>Network Programmer</li>
+                <li class="mb-1"><i class="bi bi-check2-circle text-info me-2"></i>System Programmer</li>
+                <li class="mb-1"><i class="bi bi-check2-circle text-info me-2"></i>UI Programmer</li>
+                <li class="mb-1"><i class="bi bi-check2-circle text-info me-2"></i>Gameplay Programmer</li>
+              </ul>
+            </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_5.jpg" alt="">
-                </div>
+            <div class="mb-4">
+              <strong class="d-block text-uppercase text-info small mb-1">Tech Stack &amp; Focus</strong>
+              <p class="text-secondary small mb-0">Unreal Engine C++, Custom Netcode, Traversal Mechanics, Steamworks Integration.</p>
+            </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_4.jpg" alt="">
-                </div>
+            <div class="mb-4">
+              <strong class="d-block text-uppercase text-info small mb-1">Steam Store Page</strong>
+              <a href="https://store.steampowered.com/app/2632920/TIME/" target="_blank" rel="noopener noreferrer" class="btn-primary-glow w-100 text-center">
+                View on Steam <i class="fa-brands fa-steam ms-1"></i>
+              </a>
+            </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_3.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Time_1.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+            <div>
+              <strong class="d-block text-uppercase text-info small mb-2">Overview</strong>
+              <p class="text-secondary small mb-0">
+                T.I.M.E: A fast-paced 1v1 arena shooter set in a dystopian brutalist interior. Each round changes how you think about your actions!
+                Featuring:
+                <br>• <strong>Run-it-back:</strong> Sift through previous round events and decide where it all went wrong to rectify it next round!
+                <br>• <strong>Dynamic Pick-Ups:</strong> Choose different power weapons and buffs every round.
+                <br>• <strong>Frenetic Movement:</strong> Jetpack, slide, and bounce around to outmaneuver your opponent.
+              </p>
             </div>
 
           </div>
-
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Contributions:</strong>
-                <ul>Network Programmer</ul>
-                <ul>System Programmer</ul>
-                <ul>UI Programmer</ul>
-                <ul>Gameplay Programmer</ul>
-              </li>
-              <li><strong>Project URL</strong>: <a href="#">https://store.steampowered.com/app/2632920/TIME/</a></li>
-            </ul>
-
-            <p>
-              T.I.M.E: A ONE VERSUS ONE arena shooter set in a dystopian brutalist interior. Each round changes how you think about your actions!
-              Run-it-back: Sift through previous events and decide where it all went wrong to rectify it next round!
-              Dynamic Pick-Ups: Choose different Power Weapons and Power Ups every round in put in play!
-              Frenetic Movement: Jetpack, Slide and Bounce around to dodge away from, or even toward your enemy!
-            </p>
-          </div>
-
         </div>
-
       </div>
-    </div><!-- End Portfolio Details -->
 
-  </main><!-- End #main -->
+    </div>
+  </main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <footer id="footer" class="mt-5">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-brand">John <span>Pelkman</span></div>
+        <p class="footer-copy">&copy; 2026 John Pelkman. All rights reserved.</p>
+      </div>
+      <div>
+        <a href="index.html#portfolio" class="btn-outline-cyan">Back to Portfolio</a>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script>
+    function switchImg(src, btn) {
+      document.getElementById('detailMainImg').src = src;
+      document.querySelectorAll('.modal-thumb-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
 </body>
 
 </html>
